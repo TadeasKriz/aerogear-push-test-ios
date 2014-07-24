@@ -23,6 +23,12 @@
 		830C978917997A8D00147B1B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830C976117997A8C00147B1B /* Foundation.framework */; };
 		830C979117997A8D00147B1B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 830C978F17997A8D00147B1B /* InfoPlist.strings */; };
 		830C979417997A8D00147B1B /* aerogear_push_test_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 830C979317997A8D00147B1B /* aerogear_push_test_iosTests.m */; };
+		8393A07317D5E7C600812381 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 8393A07217D5E7C600812381 /* Podfile */; };
+		83D7E36917C7544D00F4F045 /* SimpleOutputTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D7E36817C7544D00F4F045 /* SimpleOutputTabController.m */; };
+		83D7E36C17C7550300F4F045 /* PerformanceOutputTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D7E36B17C7550300F4F045 /* PerformanceOutputTabController.m */; };
+		83D7E36F17C755D800F4F045 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D7E36E17C755D800F4F045 /* TabBarController.m */; };
+		83D7E37217C75C2700F4F045 /* BaseTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D7E37117C75C2700F4F045 /* BaseTabController.m */; };
+		83D7E37517C7600400F4F045 /* PushMessageDeliveryReport.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D7E37417C7600400F4F045 /* PushMessageDeliveryReport.m */; };
 		EF59C1D7C76C4D0AA83E08AA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EBA694503D4097B581263E /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +66,17 @@
 		830C979017997A8D00147B1B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		830C979217997A8D00147B1B /* aerogear_push_test_iosTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aerogear_push_test_iosTests.h; sourceTree = "<group>"; };
 		830C979317997A8D00147B1B /* aerogear_push_test_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = aerogear_push_test_iosTests.m; sourceTree = "<group>"; };
+		8393A07217D5E7C600812381 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		83D7E36717C7544D00F4F045 /* SimpleOutputTabController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleOutputTabController.h; sourceTree = "<group>"; };
+		83D7E36817C7544D00F4F045 /* SimpleOutputTabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleOutputTabController.m; sourceTree = "<group>"; };
+		83D7E36A17C7550300F4F045 /* PerformanceOutputTabController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerformanceOutputTabController.h; sourceTree = "<group>"; };
+		83D7E36B17C7550300F4F045 /* PerformanceOutputTabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerformanceOutputTabController.m; sourceTree = "<group>"; };
+		83D7E36D17C755D800F4F045 /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
+		83D7E36E17C755D800F4F045 /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
+		83D7E37017C75C2700F4F045 /* BaseTabController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabController.h; sourceTree = "<group>"; };
+		83D7E37117C75C2700F4F045 /* BaseTabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabController.m; sourceTree = "<group>"; };
+		83D7E37317C7600400F4F045 /* PushMessageDeliveryReport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushMessageDeliveryReport.h; sourceTree = "<group>"; };
+		83D7E37417C7600400F4F045 /* PushMessageDeliveryReport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushMessageDeliveryReport.m; sourceTree = "<group>"; };
 		B3EBA694503D4097B581263E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -129,6 +146,16 @@
 				830C977D17997A8D00147B1B /* ViewController.h */,
 				830C977E17997A8D00147B1B /* ViewController.m */,
 				830C976617997A8C00147B1B /* Supporting Files */,
+				83D7E36717C7544D00F4F045 /* SimpleOutputTabController.h */,
+				83D7E36817C7544D00F4F045 /* SimpleOutputTabController.m */,
+				83D7E36A17C7550300F4F045 /* PerformanceOutputTabController.h */,
+				83D7E36B17C7550300F4F045 /* PerformanceOutputTabController.m */,
+				83D7E36D17C755D800F4F045 /* TabBarController.h */,
+				83D7E36E17C755D800F4F045 /* TabBarController.m */,
+				83D7E37017C75C2700F4F045 /* BaseTabController.h */,
+				83D7E37117C75C2700F4F045 /* BaseTabController.m */,
+				83D7E37317C7600400F4F045 /* PushMessageDeliveryReport.h */,
+				83D7E37417C7600400F4F045 /* PushMessageDeliveryReport.m */,
 			);
 			path = "aerogear-push-test-ios";
 			sourceTree = "<group>";
@@ -136,6 +163,7 @@
 		830C976617997A8C00147B1B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8393A07217D5E7C600812381 /* Podfile */,
 				830C976717997A8C00147B1B /* aerogear-push-test-ios-Info.plist */,
 				830C976817997A8C00147B1B /* InfoPlist.strings */,
 				830C976B17997A8C00147B1B /* main.m */,
@@ -178,6 +206,7 @@
 				830C975917997A8C00147B1B /* Frameworks */,
 				830C975A17997A8C00147B1B /* Resources */,
 				BBB85DCE86D64A45BD0B12B9 /* Copy Pods Resources */,
+				83AB55D817F5EDAE001BB8EF /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -243,6 +272,7 @@
 				830C977417997A8C00147B1B /* Default@2x.png in Resources */,
 				830C977617997A8C00147B1B /* Default-568h@2x.png in Resources */,
 				830C977917997A8C00147B1B /* MainStoryboard_iPhone.storyboard in Resources */,
+				8393A07317D5E7C600812381 /* Podfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +315,19 @@
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
+		83AB55D817F5EDAE001BB8EF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = XcodeCoverage/exportenv.sh;
+		};
 		BBB85DCE86D64A45BD0B12B9 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -310,6 +353,11 @@
 				830C976C17997A8C00147B1B /* main.m in Sources */,
 				830C977017997A8C00147B1B /* AppDelegate.m in Sources */,
 				830C977F17997A8D00147B1B /* ViewController.m in Sources */,
+				83D7E36917C7544D00F4F045 /* SimpleOutputTabController.m in Sources */,
+				83D7E36C17C7550300F4F045 /* PerformanceOutputTabController.m in Sources */,
+				83D7E36F17C755D800F4F045 /* TabBarController.m in Sources */,
+				83D7E37217C75C2700F4F045 /* BaseTabController.m in Sources */,
+				83D7E37517C7600400F4F045 /* PushMessageDeliveryReport.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,11 +419,13 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Tadeas Kriz (263RT83YZ6)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Tadeas Kriz (263RT83YZ6)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Karel Piwko (J7QXL84B5H)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Karel Piwko (J7QXL84B5H)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -385,6 +435,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_PROFILING_CODE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "";
@@ -406,8 +457,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Tadeas Kriz (263RT83YZ6)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Tadeas Kriz (263RT83YZ6)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Karel Piwko (J7QXL84B5H)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Karel Piwko (J7QXL84B5H)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;

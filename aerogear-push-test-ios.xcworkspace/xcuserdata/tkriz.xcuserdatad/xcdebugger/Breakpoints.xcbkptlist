@@ -8,65 +8,104 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "aerogear-push-test-ios/ViewController.m"
-         timestampString = "398275379.432633"
+         timestampString = "399899700.353303"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "44"
-         endingLineNumber = "44"
-         landmarkName = "@implementation ViewController"
-         landmarkType = "3">
+         startingLineNumber = "74"
+         endingLineNumber = "74"
+         landmarkName = "-preload:"
+         landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "aerogear-push-test-ios/ViewController.m"
-         timestampString = "398275379.432633"
+         timestampString = "399895139.211171"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "47"
-         endingLineNumber = "47"
-         landmarkName = "@implementation ViewController"
-         landmarkType = "3">
+         startingLineNumber = "66"
+         endingLineNumber = "66"
+         landmarkName = "-preload:"
+         landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "aerogear-push-test-ios/ViewController.m"
-         timestampString = "398275379.432633"
+         timestampString = "399900903.822565"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "40"
-         endingLineNumber = "40"
-         landmarkName = "@implementation ViewController"
-         landmarkType = "3">
+         startingLineNumber = "97"
+         endingLineNumber = "97"
+         landmarkName = "-preload:"
+         landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "aerogear-push-test-ios/ViewController.m"
-         timestampString = "398275379.432633"
+         timestampString = "399900903.822565"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "39"
-         endingLineNumber = "39"
-         landmarkName = "@implementation ViewController"
-         landmarkType = "3">
+         startingLineNumber = "99"
+         endingLineNumber = "99"
+         landmarkName = "-preload:"
+         landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "aerogear-push-test-ios/ViewController.m"
-         timestampString = "398275379.432633"
+         timestampString = "399900903.822565"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "41"
-         endingLineNumber = "41"
-         landmarkName = "@implementation ViewController"
-         landmarkType = "3">
+         startingLineNumber = "98"
+         endingLineNumber = "98"
+         landmarkName = "-preload:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "aerogear-push-test-ios/ViewController.m"
+         timestampString = "399900903.822565"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "100"
+         endingLineNumber = "100"
+         landmarkName = "-preload:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "aerogear-push-test-ios/PerformanceOutputTabController.m"
+         timestampString = "400148711.300995"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "51"
+         endingLineNumber = "51"
+         landmarkName = "-remoteNotificationReceived:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "aerogear-push-test-ios/PerformanceOutputTabController.m"
+         timestampString = "400148923.606848"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "83"
+         endingLineNumber = "83"
+         landmarkName = "-reset:"
+         landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>
 </Bucket>

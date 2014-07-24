@@ -1,5 +1,5 @@
 xcodeproj 'aerogear-push-test-ios.xcodeproj'
-platform :ios, '5.1'
+platform :ios, '5.0'
 
-pod 'AeroGear', :git => 'https://github.com/aerogear/aerogear-ios.git'
-pod 'AeroGearPush', :git => 'https://github.com/aerogear/aerogear-push-ios-registration.git'
+pod 'AeroGear', '1.2.0'
+pod 'AeroGear-Push', '0.7.0'

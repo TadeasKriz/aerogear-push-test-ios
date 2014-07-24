@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "TabBarController.h"
 
 #import <AGDeviceRegistration.h>
+#import <AFNetworking.h>
 
 @interface ViewController ()
 
@@ -37,7 +39,7 @@
 }
 
 - (IBAction)register:(id)sender {
-    [self.registerButton setEnabled:false];
+    [self.registerButton setEnabled: NO];
     
     AGDeviceRegistration *registration = [[AGDeviceRegistration alloc] initWithServerURL:[NSURL URLWithString:self.pushServer.text]];
     
@@ -48,6 +50,10 @@
         
     } success:^() {
         [self.registerButton setTitle:@"Registered" forState:UIControlStateDisabled];
+        
+        TabBarController* tabController = [[self storyboard] instantiateViewControllerWithIdentifier:@"TabBarViewController"];
+        
+        [self presentModalViewController:tabController animated:YES];
     } failure:^(NSError *error) {
         [self.registerButton setEnabled:true];
         [self.output setText:[NSString stringWithFormat: @"PushEE registration error: %@", error]];
@@ -55,17 +61,59 @@
     
 }
 
-- (void)remoteNotificationReceived:(NSDictionary *)data {
-    NSString* json = [self convertDictionaryToJsonString:data];
+- (IBAction)preload:(id)sender {
+
+    [self.preloadButton setEnabled: NO];
+
     
-    if(![self.appendNewMessages isOn] || [self.output.text hasPrefix:@"New messages"]) {
-        [self.output setText:json];
-    } else {
-        [self.output setText:[self.output.text stringByAppendingFormat:@"\n\n%@",json]];
-    }
+    NSURL* url = [NSURL URLWithString:self.preloadUrl.text];
+    NSURLRequest* request = [NSURLRequest requestWithURL:url];
+    
+    AFJSONRequestOperation* operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
+        
+        NSLog(@"Success");
+        
+        NSString* pushServer = [JSON valueForKeyPath:@"url"];
+        if(pushServer != nil) {
+            [self.pushServer setText: pushServer];
+        }
+            
+        NSString* variantID = [JSON valueForKeyPath:@"variantID"];
+        if(variantID != nil) {
+            [self.variantId setText: variantID];
+        }
+        
+        NSString* secret = [JSON valueForKeyPath:@"secret"];
+        if(secret != nil) {
+        [self.secret setText: secret];
+        }
+        
+        NSString* alias = [JSON valueForKeyPath:@"alias"];
+        if(alias != nil) {
+            [self.alias setText: alias];
+        }
+        
+        [self.preloadButton setEnabled: YES];
+    } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
+        NSLog(@"Failure");
+        [self.preloadButton setEnabled: YES];
+    }];
+    [operation start];
 }
 
--(NSString*)convertDictionaryToJsonString:(NSDictionary*)data {
+- (void)remoteNotificationReceived:(NSDictionary *)data {
+    TabBarController* tabController = (TabBarController*) [self modalViewController];
+    
+    [tabController remoteNotificationReceived: data];
+    return;
+    
+    NSString* json = [ViewController convertDictionaryToJsonString:data];
+    
+    [self.output setText:json];
+    
+}
+
++(NSString*)convertDictionaryToJsonString:(NSDictionary*)data {
     NSError* error;
     NSData* jsonData = [NSJSONSerialization dataWithJSONObject:data options:NSJSONWritingPrettyPrinted error:&error];
     
@@ -75,5 +123,11 @@
     }
     
     return [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+}
+- (void)viewDidUnload {
+    [self setPreloadUrl:nil];
+    [self setPreloadUrl:nil];
+    [self setPreloadButton:nil];
+    [super viewDidUnload];
 }
 @end
